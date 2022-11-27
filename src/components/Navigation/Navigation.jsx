@@ -45,6 +45,7 @@ const NavButton = styled.button`
   border: none;
   position: absolute;
   left: -40px;
+  cursor: pointer;
 `;
 
 const Navigation = () => {
@@ -59,6 +60,9 @@ const Navigation = () => {
                 </NavListItem>
                 <NavListItem>
                     <StyledNavLink to="/infinite-scroll">Infinite Scroll</StyledNavLink>
+                </NavListItem>
+                <NavListItem>
+                    <StyledNavLink to="/accordion-faq">Accordion FAQ</StyledNavLink>
                 </NavListItem>
             </NavList>
         </Nav>
