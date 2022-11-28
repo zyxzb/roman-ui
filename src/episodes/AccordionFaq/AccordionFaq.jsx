@@ -88,7 +88,6 @@ const AccordionFaq = () => {
                     </div>
                 </StyledDetails>
             ))}
-
         </Wrapper>
     );
 }

@@ -6,6 +6,7 @@ import Navigation from "components/Navigation/Navigation";
 import InfiniteScroll from "episodes/InfiniteScroll/InfiniteScroll";
 import Welcome from "components/Welcome/Welcome";
 import AccordionFaq from "episodes/AccordionFaq/AccordionFaq";
+import Sidebar from "episodes/Sidebar/Sidebar";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" index element={<Welcome/>}/>
         <Route path="/infinite-scroll" element={<InfiniteScroll/>}/>
         <Route path="/accordion-faq" element={<AccordionFaq/>}/>
+        <Route path="/sidebar" element={<Sidebar/>}/>
       </Routes>
     </BrowserRouter>
     </>
