@@ -68,6 +68,9 @@ const Navigation = () => {
                 <NavListItem>
                     <StyledNavLink isOpen={isOpen} to="/sidebar">Sidebar</StyledNavLink>
                 </NavListItem>
+                <NavListItem>
+                    <StyledNavLink isOpen={isOpen} to="/animated-buttons">Animated Buttons</StyledNavLink>
+                </NavListItem>
             </NavList>
         </Nav>
     )
