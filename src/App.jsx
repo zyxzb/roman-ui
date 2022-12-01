@@ -8,6 +8,11 @@ import Welcome from "components/Welcome/Welcome";
 import AccordionFaq from "episodes/AccordionFaq/AccordionFaq";
 import Sidebar from "episodes/Sidebar/Sidebar";
 import AnimatedButtons from "episodes/AnimatedButtons/AnimatedButtons";
+import CoolTransitions from "episodes/CoolTransitions/CoolTransitions";
+import Demo1 from "episodes/CoolTransitions/Demo1";
+import Demo2 from "episodes/CoolTransitions/Demo2";
+import Demo3 from "episodes/CoolTransitions/Demo3";
+import Demo4 from "episodes/CoolTransitions/Demo4";
 
 function App() {
   return (
@@ -21,6 +26,12 @@ function App() {
         <Route path="/accordion-faq" element={<AccordionFaq/>}/>
         <Route path="/sidebar" element={<Sidebar/>}/>
         <Route path="/animated-buttons" element={<AnimatedButtons/>}/>
+        <Route path="/cool-transitions" element={<CoolTransitions/>}>
+            <Route index element={<Demo1/>}/>
+            <Route path="demo-2" element={<Demo2/>}/>
+            <Route path="demo-3" element={<Demo3/>}/>
+            <Route path="demo-4" element={<Demo4/>}/>
+        </Route>
       </Routes>
     </BrowserRouter>
     </>
