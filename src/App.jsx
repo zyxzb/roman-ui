@@ -14,6 +14,7 @@ import Demo2 from "episodes/CoolTransitions/Demo2";
 import Demo3 from "episodes/CoolTransitions/Demo3";
 import Demo4 from "episodes/CoolTransitions/Demo4";
 import AnimatedSvg from "episodes/AnimatedSVG/AnimatedSVG";
+import ScrollAnimations from "episodes/ScrollAnimations/ScrollAnimations";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route path="demo-4" element={<Demo4/>}/>
         </Route>
         <Route path="/animated-svg" element={<AnimatedSvg/>}/>
+        <Route path="/scroll-animations" element={<ScrollAnimations/>}/>
       </Routes>
     </BrowserRouter>
     </>

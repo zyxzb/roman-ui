@@ -14,6 +14,7 @@ const Nav = styled.nav`
   top: 50px;
   transform: translateX(${({isOpen}) => isOpen ? '0' : '100%'});
   transition: transform 0.5s ease-in-out;
+  z-index: 9999;
 `;
 
 const NavList = styled.ul`
@@ -76,6 +77,9 @@ const Navigation = () => {
                 </NavListItem>
                 <NavListItem>
                     <StyledNavLink isOpen={isOpen} to="/animated-svg">Animated SVG</StyledNavLink>
+                </NavListItem>
+                <NavListItem>
+                    <StyledNavLink isOpen={isOpen} to="/scroll-animations">Scroll Animations</StyledNavLink>
                 </NavListItem>
             </NavList>
         </Nav>
